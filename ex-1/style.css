@@ -2,6 +2,64 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Poppins', sans-serif; 
 }
 
-/* Start coding here */
+/* Define CSS Variables */
+:root {
+  /* Colors */
+  --branding-color: #ff7f50;
+  --secondary-color: cornsilk;
+  --highlight-color: #d2691e;
+  --muted-color: #a9a9a9;
+
+  /* Margins */
+  --margin-1: 1px;
+  --margin-2: 5px;
+  --margin-3: 10px;
+  --margin-4: 15px;
+  --margin-5: 20px;
+
+  /* Paddings */
+  --padding-1: 1px;
+  --padding-2: 5px;
+  --padding-3: 10px;
+  --padding-4: 15px;
+  --padding-5: 20px;
+
+  /* Font Sizes */
+  --font-small: 12px;
+  --font-medium: 16px;
+  --font-large: 20px;
+  --font-xl: 30px;
+  --font-xxl: 50px;
+  --font-xxxl: 100px;
+}
+
+body {
+  background: linear-gradient(135deg, #ff7f50, #d2691e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.introduction {
+  background: var(--secondary-color);
+  padding: var(--padding-5);
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 80%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.introduction h1 {
+  color: var(--branding-color);
+  font-size: var(--font-xxxl);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
